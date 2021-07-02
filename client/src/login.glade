@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="loginWindow">
+    <property name="width_request">400</property>
+    <property name="height_request">600</property>
+    <property name="can_focus">True</property>
+    <property name="title" translatable="yes">trevel_chat</property>
+    <property name="resizable">True</property>
+    <property name="window_position">center</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkFixed">
+            <property name="width_request">400</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkEntry" id="loginEntry">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="has_focus">True</property>
+                <property name="placeholder_text" translatable="yes">login</property>
+                <style>
+                  <class name="entry"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">90</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">37</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Login</property>
+                <style>
+                  <class name="label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">65</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="passwordEntry">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="visibility">False</property>
+                <property name="invisible_char">●</property>
+                <property name="placeholder_text" translatable="yes">password</property>
+                <style>
+                  <class name="entry"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">155</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">65</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Password</property>
+                <style>
+                  <class name="label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">130</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="ipEntry">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">127.0.0.1</property>
+                <style>
+                  <class name="entry"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">25</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="portEntry">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">5000</property>
+                <style>
+                  <class name="entry"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">220</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">70</property>
+                <property name="height_request">20</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">IP address</property>
+                <style>
+                  <class name="label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="statusLabel">
+                <property name="width_request">100</property>
+                <property name="height_request">20</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#efef29292929"/>
+                </attributes>
+                <style>
+                  <class name="label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">150</property>
+                <property name="y">260</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">30</property>
+                <property name="height_request">20</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Port</property>
+                <style>
+                  <class name="label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">195</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="loginButton">
+                <property name="label" translatable="yes">Log in</property>
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="app_paintable">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <style>
+                  <class name="button"/>
+                </style>
+              </object>
+              <packing>
+                <property name="x">115</property>
+                <property name="y">340</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="width_request">256</property>
+            <property name="height_request">256</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">luggage.png</property>
+          </object>
+          <packing>
+            <property name="x">72</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="window"/>
+    </style>
+  </object>
+</interface>
